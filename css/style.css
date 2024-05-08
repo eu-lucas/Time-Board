@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
+:root{
+    --background-color: #000000;
+    --background: rgba(12, 11, 12, 0.64);
+    --font-color: #fff;
+    --selected-option-color: #A449FF;
+    --button-active: #B37CF9;
+    --button-inactive: rgba(12, 11, 12, 0.64);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-title{
+    text-align: left;
+    width: 100%;
+
+    font-size: 36px;
+}
+.end {
+    font-size: 20px;
+}
+
+.main-title span{
+    color: var(--selected-option-color);
+}
+
+.button-style{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 18px;
+    background-color: var(--button-inactive);
+    color: var(--font-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    width: 100%;
+
+    border-bottom: 4px solid var(--button-active);
+    border-left: 2px solid var(--button-active);
+    border-right: 2px solid var(--button-active);
+    border-top: none;
+}
+
+.button-style:first-child{
+    border-radius: 40px 40px 0 0;
+}
+
+.button-options{
+    display: block;
+}
+
+.active {
+    background-color: var(--button-active);
+    border-bottom: 4px solid var(--selected-option-color);
+}
+
+
+.content{
+    background-color: var(--background);
+
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+
+
+.content-button.selected{
+    display: block;
+}
+
+.content-button{
+    display: none;
+}
+
+.title-primary{
+    font-size: 28px;
+    text-align: center;
+}
+
+.title-secondary{
+    text-align: center;
+    color: var(--selected-option-color);
+    text-transform: uppercase;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.digit-counter{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.digit-counter-number{
+    font-size: 80px;
+    margin: 0;
+}
+.digit-counter-text{
+    color: var(--selected-option-color);
+    font-size: 20px;
+}
+
+@media screen and (min-width: 768px){
+    .button-options{
+        display: flex;
+    }
+
+    .button-style:first-child{
+        border-radius: 40px 0 0 0;
+    }
+
+    .button-style:last-child{
+        border-radius: 0 40px 0 0;
+    }
+
+}
