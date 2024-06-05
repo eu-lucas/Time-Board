@@ -17,10 +17,10 @@ for (let i=0; i < button.length; i++) {
 
 const counter = document.querySelectorAll(".counter")
 
-const timeButtonOne = new Date("2024-03-27T00:00:00")
-const timeButtonTwo = new Date("2024-05-12T00:00:00")
-const timeButtonThree = new Date("2024-03-06T00:00:00")
-const timeButtonFour = new Date("2024-05-13T00:00:00")
+const timeButtonOne = new Date("2025-03-27T00:00:00")
+const timeButtonTwo = new Date("2025-05-12T00:00:00")
+const timeButtonThree = new Date("2025-03-06T00:00:00")
+const timeButtonFour = new Date("2025-05-13T00:00:00")
 const timeButton = [timeButtonOne, timeButtonTwo, timeButtonThree, timeButtonFour]
 
 function calcTime(timeButton){
